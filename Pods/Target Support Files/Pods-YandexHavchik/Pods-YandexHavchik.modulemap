@@ -1,0 +1,6 @@
+framework module Pods_YandexHavchik {
+  umbrella header "Pods-YandexHavchik-umbrella.h"
+
+  export *
+  module * { export * }
+}

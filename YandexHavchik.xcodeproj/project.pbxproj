@@ -1,0 +1,674 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		16153BEA21B09832006707AE /* ImageUriToUrlConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16153BE921B09832006707AE /* ImageUriToUrlConverter.swift */; };
+		16BBC63E21AF2FD700C1B8D2 /* KingfisherCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BBC63D21AF2FD700C1B8D2 /* KingfisherCache.swift */; };
+		16BBC64021AF308800C1B8D2 /* SDWebImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BBC63F21AF308800C1B8D2 /* SDWebImageCache.swift */; };
+		16BBC64221AF313F00C1B8D2 /* NukeCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BBC64121AF313F00C1B8D2 /* NukeCache.swift */; };
+		16BBC64421AF33CE00C1B8D2 /* ImageCacheProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BBC64321AF33CE00C1B8D2 /* ImageCacheProvider.swift */; };
+		16D9BB1721ADB520009FDF1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D9BB1621ADB520009FDF1D /* AppDelegate.swift */; };
+		16D9BB1C21ADB520009FDF1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16D9BB1A21ADB520009FDF1D /* Main.storyboard */; };
+		16D9BB1E21ADB524009FDF1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16D9BB1D21ADB524009FDF1D /* Assets.xcassets */; };
+		16D9BB2121ADB524009FDF1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16D9BB1F21ADB524009FDF1D /* LaunchScreen.storyboard */; };
+		16D9BB3121ADB61F009FDF1D /* RestaurantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D9BB3021ADB61F009FDF1D /* RestaurantsViewController.swift */; };
+		16D9BB3321ADB68F009FDF1D /* RestaurantsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D9BB3221ADB68F009FDF1D /* RestaurantsProtocols.swift */; };
+		16D9BB3521ADB69F009FDF1D /* RestaurantsWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D9BB3421ADB69F009FDF1D /* RestaurantsWireframe.swift */; };
+		16D9BB3721ADB6AA009FDF1D /* RestaurantsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D9BB3621ADB6AA009FDF1D /* RestaurantsInteractor.swift */; };
+		16D9BB3921ADB6B6009FDF1D /* RestaurantsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D9BB3821ADB6B6009FDF1D /* RestaurantsPresenter.swift */; };
+		16D9BB3D21ADC2E3009FDF1D /* UIViewController+ShowAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D9BB3C21ADC2E3009FDF1D /* UIViewController+ShowAlert.swift */; };
+		16D9BB3F21ADC429009FDF1D /* RestaurantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D9BB3E21ADC429009FDF1D /* RestaurantCell.swift */; };
+		16D9BB4121ADD957009FDF1D /* SpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D9BB4021ADD957009FDF1D /* SpinnerView.swift */; };
+		16D9BB4321ADDBE4009FDF1D /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D9BB4221ADDBE4009FDF1D /* Page.swift */; };
+		16D9BB4521ADDC04009FDF1D /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D9BB4421ADDC04009FDF1D /* Restaurant.swift */; };
+		16D9BB4821ADDD67009FDF1D /* RestaurantData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D9BB4721ADDD67009FDF1D /* RestaurantData.swift */; };
+		16D9BB4F21ADE21D009FDF1D /* YandexRemoteDataManagerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D9BB4E21ADE21D009FDF1D /* YandexRemoteDataManagerFactory.swift */; };
+		16D9BB5221ADE267009FDF1D /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D9BB5121ADE267009FDF1D /* NetworkRouter.swift */; };
+		16D9BB5421ADE286009FDF1D /* RemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D9BB5321ADE286009FDF1D /* RemoteDataManager.swift */; };
+		16D9BB5621ADE2F3009FDF1D /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D9BB5521ADE2F3009FDF1D /* Result.swift */; };
+		16D9BB5821ADE349009FDF1D /* RestaurantsRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D9BB5721ADE349009FDF1D /* RestaurantsRemoteDataManager.swift */; };
+		16D9BB5A21ADE623009FDF1D /* RestaurantSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D9BB5921ADE623009FDF1D /* RestaurantSearch.swift */; };
+		16D9BB5D21ADE9FE009FDF1D /* Locator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D9BB5C21ADE9FE009FDF1D /* Locator.swift */; };
+		16D9BB6021ADF2D4009FDF1D /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D9BB5F21ADF2D4009FDF1D /* Localization.swift */; };
+		2AFBDDC0A16174C86D2FCE60 /* Pods_YandexHavchik.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 376239222BB465A5435B593E /* Pods_YandexHavchik.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		16153BE921B09832006707AE /* ImageUriToUrlConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUriToUrlConverter.swift; sourceTree = "<group>"; };
+		16BBC63D21AF2FD700C1B8D2 /* KingfisherCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingfisherCache.swift; sourceTree = "<group>"; };
+		16BBC63F21AF308800C1B8D2 /* SDWebImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDWebImageCache.swift; sourceTree = "<group>"; };
+		16BBC64121AF313F00C1B8D2 /* NukeCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NukeCache.swift; sourceTree = "<group>"; };
+		16BBC64321AF33CE00C1B8D2 /* ImageCacheProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheProvider.swift; sourceTree = "<group>"; };
+		16D9BB1321ADB520009FDF1D /* YandexHavchik.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YandexHavchik.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		16D9BB1621ADB520009FDF1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		16D9BB1B21ADB520009FDF1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		16D9BB1D21ADB524009FDF1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		16D9BB2021ADB524009FDF1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		16D9BB2221ADB524009FDF1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16D9BB3021ADB61F009FDF1D /* RestaurantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsViewController.swift; sourceTree = "<group>"; };
+		16D9BB3221ADB68F009FDF1D /* RestaurantsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsProtocols.swift; sourceTree = "<group>"; };
+		16D9BB3421ADB69F009FDF1D /* RestaurantsWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsWireframe.swift; sourceTree = "<group>"; };
+		16D9BB3621ADB6AA009FDF1D /* RestaurantsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsInteractor.swift; sourceTree = "<group>"; };
+		16D9BB3821ADB6B6009FDF1D /* RestaurantsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsPresenter.swift; sourceTree = "<group>"; };
+		16D9BB3C21ADC2E3009FDF1D /* UIViewController+ShowAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ShowAlert.swift"; sourceTree = "<group>"; };
+		16D9BB3E21ADC429009FDF1D /* RestaurantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCell.swift; sourceTree = "<group>"; };
+		16D9BB4021ADD957009FDF1D /* SpinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerView.swift; sourceTree = "<group>"; };
+		16D9BB4221ADDBE4009FDF1D /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		16D9BB4421ADDC04009FDF1D /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		16D9BB4721ADDD67009FDF1D /* RestaurantData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantData.swift; sourceTree = "<group>"; };
+		16D9BB4E21ADE21D009FDF1D /* YandexRemoteDataManagerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YandexRemoteDataManagerFactory.swift; sourceTree = "<group>"; };
+		16D9BB5121ADE267009FDF1D /* NetworkRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
+		16D9BB5321ADE286009FDF1D /* RemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataManager.swift; sourceTree = "<group>"; };
+		16D9BB5521ADE2F3009FDF1D /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		16D9BB5721ADE349009FDF1D /* RestaurantsRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsRemoteDataManager.swift; sourceTree = "<group>"; };
+		16D9BB5921ADE623009FDF1D /* RestaurantSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantSearch.swift; sourceTree = "<group>"; };
+		16D9BB5C21ADE9FE009FDF1D /* Locator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locator.swift; sourceTree = "<group>"; };
+		16D9BB5F21ADF2D4009FDF1D /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
+		376239222BB465A5435B593E /* Pods_YandexHavchik.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YandexHavchik.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA6BC4A727823DCC30D30925 /* Pods-YandexHavchik.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YandexHavchik.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YandexHavchik/Pods-YandexHavchik.debug.xcconfig"; sourceTree = "<group>"; };
+		EC93E6E57A15FC6573925C6C /* Pods-YandexHavchik.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YandexHavchik.release.xcconfig"; path = "Pods/Target Support Files/Pods-YandexHavchik/Pods-YandexHavchik.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		16D9BB1021ADB520009FDF1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AFBDDC0A16174C86D2FCE60 /* Pods_YandexHavchik.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		16BBC63C21AF2FC700C1B8D2 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				16BBC63D21AF2FD700C1B8D2 /* KingfisherCache.swift */,
+				16BBC63F21AF308800C1B8D2 /* SDWebImageCache.swift */,
+				16BBC64121AF313F00C1B8D2 /* NukeCache.swift */,
+				16BBC64321AF33CE00C1B8D2 /* ImageCacheProvider.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		16D9BB0A21ADB520009FDF1D = {
+			isa = PBXGroup;
+			children = (
+				16D9BB1521ADB520009FDF1D /* YandexHavchik */,
+				16D9BB1421ADB520009FDF1D /* Products */,
+				6DDC0CDE0632DA650E6116F8 /* Pods */,
+				CA2FA34AB6B4C2FBBDD4FC7A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		16D9BB1421ADB520009FDF1D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				16D9BB1321ADB520009FDF1D /* YandexHavchik.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		16D9BB1521ADB520009FDF1D /* YandexHavchik */ = {
+			isa = PBXGroup;
+			children = (
+				16D9BB4921ADE126009FDF1D /* Utils */,
+				16D9BB3A21ADC1FC009FDF1D /* Common */,
+				16D9BB2821ADB571009FDF1D /* Modules */,
+				16D9BB1621ADB520009FDF1D /* AppDelegate.swift */,
+				16D9BB1A21ADB520009FDF1D /* Main.storyboard */,
+				16D9BB1D21ADB524009FDF1D /* Assets.xcassets */,
+				16D9BB1F21ADB524009FDF1D /* LaunchScreen.storyboard */,
+				16D9BB2221ADB524009FDF1D /* Info.plist */,
+			);
+			path = YandexHavchik;
+			sourceTree = "<group>";
+		};
+		16D9BB2821ADB571009FDF1D /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				16D9BB2921ADB585009FDF1D /* Restaurants */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		16D9BB2921ADB585009FDF1D /* Restaurants */ = {
+			isa = PBXGroup;
+			children = (
+				16D9BB2F21ADB5F4009FDF1D /* View */,
+				16D9BB2E21ADB5EA009FDF1D /* Presenter */,
+				16D9BB2D21ADB5DB009FDF1D /* Interactor */,
+				16D9BB2C21ADB5D1009FDF1D /* Wireframe */,
+				16D9BB2B21ADB5C7009FDF1D /* Protocols */,
+				16D9BB2A21ADB5B4009FDF1D /* Entities */,
+			);
+			path = Restaurants;
+			sourceTree = "<group>";
+		};
+		16D9BB2A21ADB5B4009FDF1D /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				16D9BB4721ADDD67009FDF1D /* RestaurantData.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		16D9BB2B21ADB5C7009FDF1D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				16D9BB3221ADB68F009FDF1D /* RestaurantsProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		16D9BB2C21ADB5D1009FDF1D /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				16D9BB3421ADB69F009FDF1D /* RestaurantsWireframe.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		16D9BB2D21ADB5DB009FDF1D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				16D9BB3621ADB6AA009FDF1D /* RestaurantsInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		16D9BB2E21ADB5EA009FDF1D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				16D9BB3821ADB6B6009FDF1D /* RestaurantsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		16D9BB2F21ADB5F4009FDF1D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				16D9BB3021ADB61F009FDF1D /* RestaurantsViewController.swift */,
+				16D9BB3E21ADC429009FDF1D /* RestaurantCell.swift */,
+				16D9BB4021ADD957009FDF1D /* SpinnerView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		16D9BB3A21ADC1FC009FDF1D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				16BBC63C21AF2FC700C1B8D2 /* Cache */,
+				16D9BB4621ADDC80009FDF1D /* Entities */,
+				16D9BB3B21ADC208009FDF1D /* Extensions */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		16D9BB3B21ADC208009FDF1D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				16D9BB3C21ADC2E3009FDF1D /* UIViewController+ShowAlert.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		16D9BB4621ADDC80009FDF1D /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				16D9BB4221ADDBE4009FDF1D /* Page.swift */,
+				16D9BB5521ADE2F3009FDF1D /* Result.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		16D9BB4921ADE126009FDF1D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				16D9BB5E21ADF2C8009FDF1D /* Localization */,
+				16D9BB5B21ADE9EB009FDF1D /* Location */,
+				16D9BB4A21ADE12B009FDF1D /* DataManagers */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		16D9BB4A21ADE12B009FDF1D /* DataManagers */ = {
+			isa = PBXGroup;
+			children = (
+				16D9BB4B21ADE138009FDF1D /* Remote */,
+			);
+			path = DataManagers;
+			sourceTree = "<group>";
+		};
+		16D9BB4B21ADE138009FDF1D /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				16D9BB5021ADE24B009FDF1D /* NetworkLayer */,
+				16D9BB4D21ADE1A3009FDF1D /* YandexApi */,
+				16D9BB4C21ADE142009FDF1D /* Entities */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		16D9BB4C21ADE142009FDF1D /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				16D9BB4421ADDC04009FDF1D /* Restaurant.swift */,
+				16D9BB5921ADE623009FDF1D /* RestaurantSearch.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		16D9BB4D21ADE1A3009FDF1D /* YandexApi */ = {
+			isa = PBXGroup;
+			children = (
+				16D9BB4E21ADE21D009FDF1D /* YandexRemoteDataManagerFactory.swift */,
+				16D9BB5721ADE349009FDF1D /* RestaurantsRemoteDataManager.swift */,
+				16153BE921B09832006707AE /* ImageUriToUrlConverter.swift */,
+			);
+			path = YandexApi;
+			sourceTree = "<group>";
+		};
+		16D9BB5021ADE24B009FDF1D /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				16D9BB5121ADE267009FDF1D /* NetworkRouter.swift */,
+				16D9BB5321ADE286009FDF1D /* RemoteDataManager.swift */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		16D9BB5B21ADE9EB009FDF1D /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				16D9BB5C21ADE9FE009FDF1D /* Locator.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		16D9BB5E21ADF2C8009FDF1D /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				16D9BB5F21ADF2D4009FDF1D /* Localization.swift */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		6DDC0CDE0632DA650E6116F8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AA6BC4A727823DCC30D30925 /* Pods-YandexHavchik.debug.xcconfig */,
+				EC93E6E57A15FC6573925C6C /* Pods-YandexHavchik.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CA2FA34AB6B4C2FBBDD4FC7A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				376239222BB465A5435B593E /* Pods_YandexHavchik.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		16D9BB1221ADB520009FDF1D /* YandexHavchik */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16D9BB2521ADB524009FDF1D /* Build configuration list for PBXNativeTarget "YandexHavchik" */;
+			buildPhases = (
+				461FDB8423446EA3ABE345E5 /* [CP] Check Pods Manifest.lock */,
+				16D9BB0F21ADB520009FDF1D /* Sources */,
+				16D9BB1021ADB520009FDF1D /* Frameworks */,
+				16D9BB1121ADB520009FDF1D /* Resources */,
+				D62E788C131AA0C3EF3BA8C2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YandexHavchik;
+			productName = YandexHavchik;
+			productReference = 16D9BB1321ADB520009FDF1D /* YandexHavchik.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		16D9BB0B21ADB520009FDF1D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Булат Галиев";
+				TargetAttributes = {
+					16D9BB1221ADB520009FDF1D = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 16D9BB0E21ADB520009FDF1D /* Build configuration list for PBXProject "YandexHavchik" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 16D9BB0A21ADB520009FDF1D;
+			productRefGroup = 16D9BB1421ADB520009FDF1D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				16D9BB1221ADB520009FDF1D /* YandexHavchik */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		16D9BB1121ADB520009FDF1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16D9BB2121ADB524009FDF1D /* LaunchScreen.storyboard in Resources */,
+				16D9BB1E21ADB524009FDF1D /* Assets.xcassets in Resources */,
+				16D9BB1C21ADB520009FDF1D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		461FDB8423446EA3ABE345E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YandexHavchik-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D62E788C131AA0C3EF3BA8C2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-YandexHavchik/Pods-YandexHavchik-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Nuke/Nuke.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nuke.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YandexHavchik/Pods-YandexHavchik-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		16D9BB0F21ADB520009FDF1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16D9BB5421ADE286009FDF1D /* RemoteDataManager.swift in Sources */,
+				16D9BB4521ADDC04009FDF1D /* Restaurant.swift in Sources */,
+				16D9BB3F21ADC429009FDF1D /* RestaurantCell.swift in Sources */,
+				16D9BB4821ADDD67009FDF1D /* RestaurantData.swift in Sources */,
+				16D9BB4121ADD957009FDF1D /* SpinnerView.swift in Sources */,
+				16D9BB3D21ADC2E3009FDF1D /* UIViewController+ShowAlert.swift in Sources */,
+				16D9BB6021ADF2D4009FDF1D /* Localization.swift in Sources */,
+				16D9BB5621ADE2F3009FDF1D /* Result.swift in Sources */,
+				16D9BB3921ADB6B6009FDF1D /* RestaurantsPresenter.swift in Sources */,
+				16D9BB4F21ADE21D009FDF1D /* YandexRemoteDataManagerFactory.swift in Sources */,
+				16D9BB4321ADDBE4009FDF1D /* Page.swift in Sources */,
+				16D9BB5A21ADE623009FDF1D /* RestaurantSearch.swift in Sources */,
+				16D9BB3721ADB6AA009FDF1D /* RestaurantsInteractor.swift in Sources */,
+				16BBC64421AF33CE00C1B8D2 /* ImageCacheProvider.swift in Sources */,
+				16D9BB5D21ADE9FE009FDF1D /* Locator.swift in Sources */,
+				16D9BB3121ADB61F009FDF1D /* RestaurantsViewController.swift in Sources */,
+				16BBC63E21AF2FD700C1B8D2 /* KingfisherCache.swift in Sources */,
+				16D9BB3521ADB69F009FDF1D /* RestaurantsWireframe.swift in Sources */,
+				16D9BB3321ADB68F009FDF1D /* RestaurantsProtocols.swift in Sources */,
+				16BBC64221AF313F00C1B8D2 /* NukeCache.swift in Sources */,
+				16D9BB1721ADB520009FDF1D /* AppDelegate.swift in Sources */,
+				16BBC64021AF308800C1B8D2 /* SDWebImageCache.swift in Sources */,
+				16D9BB5221ADE267009FDF1D /* NetworkRouter.swift in Sources */,
+				16D9BB5821ADE349009FDF1D /* RestaurantsRemoteDataManager.swift in Sources */,
+				16153BEA21B09832006707AE /* ImageUriToUrlConverter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		16D9BB1A21ADB520009FDF1D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16D9BB1B21ADB520009FDF1D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		16D9BB1F21ADB524009FDF1D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16D9BB2021ADB524009FDF1D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		16D9BB2321ADB524009FDF1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		16D9BB2421ADB524009FDF1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		16D9BB2621ADB524009FDF1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA6BC4A727823DCC30D30925 /* Pods-YandexHavchik.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KLQXQCYQ3H;
+				INFOPLIST_FILE = YandexHavchik/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = BulatInc.YandexHavchik;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		16D9BB2721ADB524009FDF1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC93E6E57A15FC6573925C6C /* Pods-YandexHavchik.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KLQXQCYQ3H;
+				INFOPLIST_FILE = YandexHavchik/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = BulatInc.YandexHavchik;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		16D9BB0E21ADB520009FDF1D /* Build configuration list for PBXProject "YandexHavchik" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16D9BB2321ADB524009FDF1D /* Debug */,
+				16D9BB2421ADB524009FDF1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16D9BB2521ADB524009FDF1D /* Build configuration list for PBXNativeTarget "YandexHavchik" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16D9BB2621ADB524009FDF1D /* Debug */,
+				16D9BB2721ADB524009FDF1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 16D9BB0B21ADB520009FDF1D /* Project object */;
+}

@@ -1,0 +1,26 @@
+PODS:
+  - Kingfisher (4.10.1)
+  - Nuke (7.5.1)
+  - SDWebImage (4.4.2):
+    - SDWebImage/Core (= 4.4.2)
+  - SDWebImage/Core (4.4.2)
+
+DEPENDENCIES:
+  - Kingfisher (~> 4.0)
+  - Nuke (~> 7.0)
+  - SDWebImage (~> 4.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Kingfisher
+    - Nuke
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  Nuke: 3814db501e55f17951451839c726ffd91641e9a5
+  SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
+
+PODFILE CHECKSUM: 5bbbe04d926596e3447c6893aae78645ef68b34b
+
+COCOAPODS: 1.5.3
